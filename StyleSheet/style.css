@@ -1,0 +1,2566 @@
+/*Common CSS-------------------------------------*/
+
+* {
+    box-sizing: border-box;
+}
+
+/*Mobile-------------------------------------*/
+@media only screen and (max-width: 570px){
+    body{
+        background: white;
+        height: 100%;
+    }
+    
+    h1{
+        font-family: 'Times New Roman', Arial, Helvetica, sans-serif;
+        font-style: normal;
+        font-variant: normal;
+        font-weight: normal;
+        font-size: 1.3em;
+        color: black;
+    }
+    
+    h2{
+        font-family: 'Times New Roman', Times, serif;
+        font-style: normal;
+        font-variant: normal;
+        font-weight: bold;
+        font-size: 20px;;
+        color: black;
+    }
+    
+    h3{
+        font-family: 'Times New Roman', Times, serif;
+        font-style: normal;
+        font-variant: normal;
+        font-weight: bold;
+        font-size: 17px;;
+        color: black;
+    }
+    
+    p{
+        font-family: 'Times New Roman', Times, serif;
+        font-style: normal;
+        font-variant: normal;
+        font-weight: normal;
+        font-size: 15px;;
+        color: black;
+    }
+
+}
+
+
+/*Tablet-------------------------------------*/
+@media only screen and (min-width: 571px) and (max-width: 1010px){
+    body{
+        background: white;
+        height: 100%;
+    }
+    
+    h1{
+        font-family: 'Times New Roman', Arial, Helvetica, sans-serif;
+        font-style: normal;
+        font-variant: normal;
+        font-weight: normal;
+        font-size: 1.4em;
+        color: black;
+    }
+    
+    h2{
+        font-family: 'Times New Roman', Times, serif;
+        font-style: normal;
+        font-variant: normal;
+        font-weight: bold;
+        font-size: 20px;;
+        color: black;
+    }
+    
+    h3{
+        font-family: 'Times New Roman', Times, serif;
+        font-style: normal;
+        font-variant: normal;
+        font-weight: bold;
+        font-size: 17px;
+        color: black;
+    }
+    
+    p{
+        font-family: 'Times New Roman', Times, serif;
+        font-style: normal;
+        font-variant: normal;
+        font-weight: normal;
+        font-size: 10px;;
+        color: black;
+    }
+}
+/*Desktop-------------------------------------*/
+@media only screen and (min-width: 1011px){
+    body{
+        background: white;
+        height: 100%;
+    }
+    
+    h1{
+        font-family:'Times New Roman', Arial, Helvetica, sans-serif;
+        font-style: normal;
+        font-variant: normal;
+        font-weight: normal;
+        font-size: 2em;
+        color: black;
+    }
+    
+    h2{
+        font-family: 'Times New Roman', Times, serif;
+        font-style: normal;
+        font-variant: normal;
+        font-weight: bold;
+        font-size: 20px;;
+        color: black;
+    }
+    
+    h3{
+        font-family: 'Times New Roman', Times, serif;
+        font-style: normal;
+        font-variant: normal;
+        font-weight: bold;
+        font-size: 17px;;
+        color: black;
+    }
+    
+    p{
+        font-family: 'Times New Roman', Times, serif;
+        font-style: normal;
+        font-variant: normal;
+        font-weight: normal;
+        font-size: 15px;;
+        color: black;
+    }
+}
+
+/*Header CSS---------------------------------------*/
+
+header { grid-area: header; }
+
+header{
+    background:rgba(255, 255, 255, 255);
+    border-radius: 0px;;
+    border: 1px solid white;
+    text-align: center;
+    width:100%;
+    height:200px;
+    padding:10px;
+}
+
+header h1{
+    color: black;
+    font-family:'Times New Roman', Times, serif;
+
+}
+
+header object{
+   
+}
+
+/*Nav CSS-------------------------------------------*/
+
+nav { grid-area: nav; }
+/*Mobile-------------------------------------*/
+@media only screen and (max-width: 570px){
+    nav{
+        background:#4e5166;
+        border-radius: 10px;
+        border: 1px solid white;
+        text-align:center;
+        width:100%;
+    }
+    
+    label{
+        display: block;
+        cursor: pointer;
+        font-size:28px;
+        color: white;
+        float:right;
+        margin-right: 20px;
+        position: relative;
+    }
+    
+    #toggle{
+     display: none;
+    }
+
+    nav #menu{
+        display: none;
+        border-radius: 20px;
+        width:100%;
+        clear: right;
+    }
+    
+    nav ol{
+        border:1px solid white;
+        border-width:1px 0;
+        list-style:none;
+        margin:0;
+        padding:0;
+        text-align:center;
+        
+        
+    }
+    
+    nav li{
+        display:block;
+        border: 1px solid white;
+        border-radius: 5px;
+        padding:5px;
+        
+        
+        
+    }
+    
+    nav li a {
+        font-family: Arial, Helvetica, sans-serif;
+        font-style: normal;
+        text-decoration: none;
+        font-variant: normal;
+        font-weight: normal;
+        font-size: 1em;
+        color:hsl(0,0%,255%);
+        display:inline-block;
+        padding:10px;
+    
+        
+        
+    }
+
+    #toggle:checked + #menu{
+        display: block;
+    }
+}
+/*Tablet-------------------------------------*/
+@media only screen and (min-width: 571px) and (max-width: 1010px){
+    nav{
+        background:#4e5166;
+        border-radius: 10px;
+        border: 1px solid white;
+        text-align:center;
+        width:100%;
+        
+        
+        
+    }
+    
+    label{
+        margin: 0 40px 0 0;
+        font-size: 26px;   
+        text-align: center;
+        display: none;
+    }
+    
+    #toggle{
+     display: none;
+    }
+    
+    nav ol{
+        border:1px solid white;
+        border-width:1px 0;
+        list-style:none;
+        margin:0;
+        padding:0;
+        text-align:center;
+        
+    }
+    
+    nav li{
+        display:inline;
+        border: 1px solid white;
+        border-radius: 5px;;
+        padding:5px;
+        
+        
+    }
+    
+    nav li a {
+        font-family: Arial, Helvetica, sans-serif;
+        font-style: normal;
+        text-decoration: none;
+        font-variant: normal;
+        font-weight: normal;
+        font-size: 1em;
+        color:hsl(0,0%,255%);
+        display:inline-block;
+        padding:10px;
+    
+        
+        
+    }
+}
+/*Desktop-------------------------------------*/
+@media only screen and (min-width: 1011px){
+    nav{
+        background:#4e5166;
+        border-radius: 10px;
+        border: 1px solid white;
+        text-align:center;
+        width:100%;
+            
+    }
+    
+    label{
+        margin: 0 40px 0 0;
+        font-size: 26px;   
+        text-align: center;
+        display: none;
+        
+    }
+    
+    #toggle{
+     display: none;
+    }
+    
+    nav ol{
+        border:1px solid white;
+        border-width:1px 0;
+        list-style:none;
+        margin:0;
+        padding:0;
+        text-align:center;
+        
+    }
+    
+    nav li{
+        display:inline;
+        border: 1px solid black;
+        border-radius: 5px;
+        padding:5px;
+        
+        
+    }
+    
+    nav li a {
+        font-family: Baskerville, Arial, Helvetica, sans-serif;
+        font-style: none;
+        text-decoration:none;
+        font-variant: normal;
+        font-weight: normal;
+        font-size: 1em;
+        color:white;
+        display:inline-block;
+        padding:10px;
+            
+    }
+}
+
+/*index.html CSS------------------------------------*/
+
+
+#fpIntro { grid-area: intro; }
+#fplinkArea { grid-area: main; }
+#TwitterList { grid-area: twitter; }
+
+/*Mobile-------------------------------------*/
+@media only screen and (max-width: 570px)
+{
+    .grid-container-index {
+        display: grid;
+        grid-template-columns: auto auto auto auto;
+        grid-template-areas:
+          'header header header header header header'
+          'nav nav nav nav nav nav'
+          'intro intro intro intro intro intro'
+          'main main main main main main'
+          'twitter twitter twitter twitter twitter twitter'
+          'footer footer footer footer footer footer';
+        background-color: white;
+      }
+
+    #fpIntro{
+        border: 1px solid grey;
+        border-bottom: none;
+        background: rgb(219, 216, 193);
+         
+    }
+    
+    #fpIntro #fpintroTitle{
+        
+        padding:5px;
+        position:relative;
+    }
+    
+    #fpIntro #fpintroTitle p{
+        font-family: 'Times New Roman', Times, serif;
+        font-style: normal;
+        font-variant: normal;
+        font-weight: normal;
+        font-size: 20px;;
+        color:rgb(0, 0, 0);
+        text-align: center;
+        
+    }
+    
+    #fpIntro #fpintroText{
+      width:100%;
+      padding:10px;
+      text-align: center;
+      
+    }
+    
+    #fplinkArea{
+    
+    }
+    
+    #fplinkArea .fplinkAreaContent{
+        border: 1px solid grey;
+        border-bottom: none;
+        position: relative;
+        padding: 20px;
+        
+    }
+    
+    
+    
+    #fplinkArea .fplinkAreaContent h2{
+        width:100px;
+        background: grey; 
+    }
+    
+    #fplinkArea .fplinkAreaContent p{
+        width:100px;
+        
+    }
+    
+    #fplinkArea .fplinkAreaContent a{
+        font-family: 'Times New Roman', Times, serif;
+        font-style: normal;
+        font-variant: normal;
+        font-weight: normal;
+        font-size: 15px;;
+        color: blue;
+    } 
+    
+    #TwitterList{
+        background: rgb(243, 243, 226);
+        border: 1px solid white;
+        border-bottom: none;
+    }
+    
+}
+
+/*Tablet-------------------------------------*/
+@media only screen and (min-width: 571px) and (max-width: 1010px){
+
+    .grid-container-index {
+      display: grid;
+      grid-template-columns: auto auto auto auto;
+      grid-template-areas:
+        'header header header header header header'
+        'nav nav nav nav nav nav'
+        'intro intro intro intro intro intro'
+        'main main main main main main'
+        'twitter twitter twitter twitter twitter twitter'
+        'footer footer footer footer footer footer';
+      background-color: white;
+    }
+
+   
+      
+      #fpIntro{
+          border: 1px solid grey;
+          border-bottom: none;
+          background: rgb(219, 216, 193);
+          
+      }
+      
+      #fpIntro #fpintroTitle{
+          
+          padding:5px;
+          position:relative;
+      }
+      
+      #fpIntro #fpintroTitle p{
+          font-family: 'Times New Roman', Times, serif;
+          font-style: normal;
+          font-variant: normal;
+          font-weight:normal;
+          font-size: 20px;;
+          color:rgb(0, 0, 0);
+          
+      }
+      
+      #fpIntro #fpintroText{
+        width:300px;
+        padding:10px;
+      }
+      
+      #fplinkArea{
+      
+      }
+      
+      #fplinkArea .fplinkAreaContent{
+          border: 1px solid grey;
+          border-bottom: none;
+          position: relative;
+          padding: 40px;
+          
+      }
+      
+      
+      
+      #fplinkArea .fplinkAreaContent h2{
+         width:100px;
+         
+      }
+      
+      #fplinkArea .fplinkAreaContent p{
+         width:100px;
+         
+      }
+      
+      #fplinkArea .fplinkAreaContent a{
+          font-family: 'Times New Roman', Times, serif;
+          font-style: normal;
+          font-variant: normal;
+          font-weight: normal;
+          font-size: 15px;;
+          color: blue;
+      } 
+      
+      #TwitterList{
+          background: rgb(243, 243, 226);
+          border: 1px solid grey;
+          border-bottom: none;
+      }
+      
+}
+
+/*Desktop-------------------------------------*/
+@media only screen and (min-width: 1011px) {
+
+    .grid-container-index {
+      display: grid;
+      grid-template-columns: auto auto auto auto auto 320px;
+      grid-template-areas:
+        'header header header header header intro'
+        'nav nav nav nav nav intro'
+        'main main main main main twitter'
+        'footer footer footer footer footer footer';
+      background-color: white;
+    }
+    
+    #fpIntro{
+        border: 1px solid grey;
+        border-bottom: none;
+        background: rgb(219, 216, 193);
+        height: 240px;
+        
+    }
+    
+    #fpIntro #fpintroTitle{
+        
+        padding:5px;
+        position:relative;
+    }
+    
+    #fpIntro #fpintroTitle p{
+        font-family: 'Times New Roman', Times, serif;
+        font-style: normal;
+        font-variant: normal;
+        font-weight: normal;
+        font-size: 20px;
+        color:rgb(0, 0, 0);
+        
+    }
+    
+    #fpIntro #fpintroText{
+      width:100%;
+      padding:10px;
+      position: relative;
+      bottom:40px;
+    }
+    
+    #fplinkArea{
+    
+    }
+    
+    #fplinkArea .fplinkAreaContent{
+        border: 1px solid grey;
+        border-bottom: none;
+        border-right:none;
+        position: relative;
+        padding: 20px;
+        
+    }
+    
+    
+    #fplinkArea .fplinkAreaContent h2{
+        background: white;
+        width: 200px;
+        
+    }
+    
+    #fplinkArea .fplinkAreaContent p{
+        width:200px;
+             
+    }
+    
+    #fplinkArea .fplinkAreaContent a{
+        font-family: 'Times New Roman', Times, serif;
+        font-style: normal;
+        font-variant: normal;
+        font-weight: normal;
+        font-size: 15px;;
+        color: blue;
+    } 
+    
+    #TwitterList{
+        background: rgb(228, 230, 215);
+        border: 1px solid grey;
+        padding: 10px;
+    }
+    
+
+    
+}
+
+/*Events.html CSS-------------------------------------*/
+
+#EventsIntro { grid-area: intro; }
+aside { grid-area: aside; }
+#EventsHighlights { grid-area: main; }
+
+/*Mobile-------------------------------------*/
+@media only screen and (max-width: 570px){
+    .grid-container-events {
+        display: grid;
+        grid-template-columns: auto auto auto auto;
+        grid-template-areas:
+          'header header header header header header'
+          'nav nav nav nav nav nav'
+          'intro intro intro intro intro intro'
+          'aside aside aside aside aside aside'
+          'main main main main main main main'
+          'footer footer footer footer footer footer';
+        background-color: white;
+      }
+      
+      #EventsIntro{
+        background: rgb(219, 216, 193);
+        padding: 10px;
+        
+      }
+      
+      #EventsIntro p{
+        font-size: 15px;
+        text-align: justify;
+      }
+      
+      aside{
+          background: white;
+          padding:20px;
+          height: 100%;
+          border:1px solid grey;
+          border-bottom: none;
+      }
+      
+      aside #orProtocol{
+      background: rgb(243, 243, 226);
+      height: 100%;
+      border:1px solid lightgray;
+      
+      }
+      
+      aside #orProtocolOverview{
+        padding:10px;
+      }
+      
+      aside #orProtocolOverview p{
+        font-weight: bold;
+      } 
+      
+      aside #orProtocolList{
+         
+      } 
+      
+
+      
+      #EventsHighlights{
+          border: 1px solid grey;
+          padding:10px;
+         
+      }
+      
+      #EventsHighlights p:first-child{
+           font-weight: bold;
+           font-size: 19px;
+      }
+      
+      #EventsHighlights .Media{
+          background: #eaeade;
+          padding:20px;
+          border: 1px solid black;
+          margin-bottom: 10px;
+          border-style: dashed;
+      
+      }
+      
+      #EventsHighlights .Media h2{
+       font-size: 15px;
+      }
+      
+      #EventsHighlights .Media h2 a{
+          font-family: 'Times New Roman', Times, serif;
+          font-style: normal;
+          font-variant: normal;
+          font-weight: normal;
+          font-size: 18px;;
+          color: blue;
+      }
+      
+      #EventsHighlights .Media img{
+       
+      }
+      
+      #EventsHighlights .Media p{
+       
+      }
+}
+/*Tablet-------------------------------------*/
+@media only screen and (min-width: 571px) and (max-width: 1010px){
+    .grid-container-events {
+        display: grid;
+        grid-template-columns: auto auto auto auto;
+        grid-template-areas:
+          'header header header header header header'
+          'nav nav nav nav nav nav'
+          'intro intro intro intro intro intro'
+          'aside aside aside aside aside aside'
+          'main main main main main main'
+          'footer footer footer footer footer footer';
+        background-color: white;
+      }
+      
+      #EventsIntro{
+        background: rgb(219, 216, 193);
+        padding: 10px;
+      }
+      
+      #EventsIntro p{
+        font-size: 15px;
+        text-align: justify;
+      }
+      
+      aside{
+          background: white;
+          padding:20px;
+          height: 100%;
+          border:1px solid grey;
+          border-bottom: none;
+      }
+      
+      aside #orProtocol{
+      background: rgb(243, 243, 226);
+      height: 100%;
+      border:1px solid lightgray;
+      }
+      
+      aside #orProtocolOverview{
+        padding:20px;
+      }
+      
+      aside #orProtocolOverview p{
+        font-weight: bold;
+        font-size: 15px;
+      } 
+      
+      aside #orProtocolList{
+         
+      } 
+      
+
+      
+      #EventsHighlights{
+          border: 1px solid grey;
+          padding:20px;
+         
+      }
+      
+      #EventsHighlights p:first-child{
+           font-weight: bold;
+           font-size: 18px;
+      }
+      
+      #EventsHighlights .Media{
+          background: #eaeade;
+          padding:20px;
+          border: 1px solid black;
+          margin-bottom: 10px;
+          border-style: dashed;
+      
+      }
+      
+      #EventsHighlights .Media h2{
+          font-size:17px;
+       
+      }
+      
+      #EventsHighlights .Media h2 a{
+          font-family: 'Times New Roman', Times, serif;
+          font-style: normal;
+          font-variant: normal;
+          font-weight: normal;
+          font-size: 18px;;
+          color: blue;
+      }
+      
+      #EventsHighlights .Media img{
+       
+      }
+      
+      #EventsHighlights .Media p{
+       
+      }
+}
+/*Desktop-------------------------------------*/
+@media only screen and (min-width: 1011px){
+    .grid-container-events {
+        display: grid;
+        grid-template-columns: auto auto auto auto auto 320px;
+        grid-template-areas:
+          'header header header header header header'
+          'nav nav nav nav nav nav'
+          'intro intro intro intro intro aside'
+          'main main main main main aside'
+          'footer footer footer footer footer footer';
+        background-color: white;
+      }
+      
+      #EventsIntro{
+        background: rgb(219, 216, 193);
+        padding: 10px;
+        
+        
+      }
+      
+      #EventsIntro p{
+        font-size: 20px;
+        text-align: justify;
+      }
+      
+      aside{
+          background: white;
+          padding:20px;
+          height: 100%;
+          border:1px solid grey;
+      }
+      
+      aside #orProtocol{
+      background: rgb(243, 243, 226);
+      height: 100%;
+      border:1px solid lightgray;
+      width:100%;
+      }
+      
+      aside #orProtocolOverview{
+        padding:0px;
+      }
+      
+      aside #orProtocolOverview p{
+        font-weight: bold;
+      } 
+      
+      aside #orProtocolList{
+         
+      } 
+      
+                  
+      #EventsHighlights{
+          border: 1px solid grey;
+          border-right: none;
+          padding:10px;
+         
+      }
+      
+      #EventsHighlights p:first-child{
+           font-weight: bold;
+           font-size: 25px;
+      }
+      
+      #EventsHighlights .Media{
+          background: #eaeade;
+          padding:20px;
+          border: 1px solid black;
+          margin-bottom: 10px;
+          border-style: dashed;
+      
+      }
+      
+      #EventsHighlights .Media h2{
+       
+      }
+      
+      #EventsHighlights .Media h2 a{
+          font-family: 'Times New Roman', Times, serif;
+          font-style: normal;
+          font-variant: normal;
+          font-weight: normal;
+          font-size: 18px;;
+          color: blue;
+      }
+      
+      #EventsHighlights .Media img{
+       
+      }
+      
+      #EventsHighlights .Media p{
+       
+      }
+
+}
+
+
+
+
+/*Eventsmap.html CSS-----------------------------------*/
+
+#emMap { grid-area: image; }
+#emMapCaption{grid-area: imgCaption;}
+.firstvenue{grid-area: one;}
+.secondvenue{grid-area: two;}
+.thirdvenue{grid-area: three;}
+.fourthvenue{grid-area: four;}
+
+/*Mobile-------------------------------------*/
+@media only screen and (max-width: 570px){
+
+    .grid-container-Eventsmap {
+        display: grid;
+        grid-template-columns: auto auto auto auto;
+        grid-template-areas:
+          'header header header header header header'
+          'nav nav nav nav nav nav'
+          'image image image image image image'
+          'imgCaption imgCaption imgCaption imgCaption imgCaption imgCaption'
+          'one one one one one one'
+          'two two two two two two'
+          'three three three three three three'
+          'four four four four four four'
+          'footer footer footer footer footer footer';
+        
+      }
+    
+    
+    
+    #emMap{
+        text-align: center;
+        background: rgb(229, 231, 245);
+        padding:10px;
+    }
+    
+    #emMap img{
+      width:100%;
+      height: auto;
+    }
+    
+    #emMapCaption{
+        background: rgb(229, 231, 245);
+        text-align: center;
+    }
+    
+    #emMapCaption p{
+        font-family: 'Times New Roman', Times, serif;
+        font-style: normal;
+        font-variant: normal;
+        font-weight: bold;
+        font-size: 15px;;
+        color: black;
+    }
+    
+    .venue{
+        padding:20px;
+        background: #eaeade;
+        border:2px solid lightgray;
+        margin:2px;
+        border-style: dotted;
+    
+    }
+    
+    .venue .venueTitle{
+        background: lightgray;
+    }
+    
+    .venue .venueTitle h2{
+        font-family: 'Times New Roman', Times, serif;
+        font-style: normal;
+        font-variant: normal;
+        font-weight: bold;
+        font-size: 20px;;
+        color: black;
+    }
+    
+    .venue .venueDescription{
+    
+    }
+    
+    .venue .venueDescription p{
+      
+    }
+    
+    .venue .venueImage{
+    
+    }
+    
+    .venue .venueImage img{
+       
+    }
+    
+    .venue .venueOpeningTimes{
+    
+    }
+    
+    .venue .venueOpeningTimes p{
+        font-weight: bold;
+    }
+    
+    .venue .venueOpeningTimes table{
+    
+    }
+    
+    .venue .venueOpeningTimes table th{
+        font-family: 'Times New Roman', Times, serif;
+        font-style: normal;
+        font-variant: normal;
+        font-weight: bold;
+        font-size: 15px;;
+        color:rgb(0, 0, 0);
+        float: left;
+    }
+    
+    .venue .venueOpeningTimes table td{
+        font-family: 'Times New Roman', Times, serif;
+        font-style: normal;
+        font-variant: normal;
+        font-weight: normal;
+        font-size: 15px;;
+        color:hsl(0, 0%, 0%);
+    }
+    
+    .venue .venueContact{
+    
+    }
+    
+    .venue .venueContact p{
+        font-family: 'Times New Roman', Times, serif;
+        font-style: normal;
+        font-variant: normal;
+        font-weight: lighter;
+        font-size: 18px;;
+        color:rgb(0, 0, 0);
+    }
+    
+    .venue .venueAddress{
+    
+    }
+    
+    .venue .venueAddress address{
+        font-family: 'Times New Roman', Times, serif;
+        font-style: italic;
+        font-variant: normal;
+        font-weight: normal;
+        font-size: 13px;
+        color:rgb(0, 0, 0);
+    }
+}
+/*Tablet-------------------------------------*/
+@media only screen and (min-width: 571px) and (max-width: 1010px){
+    .grid-container-Eventsmap {
+        display: grid;
+        grid-template-columns: auto auto auto auto;
+        grid-template-areas:
+          'header header header header header header'
+          'nav nav nav nav nav nav'
+          'image image image image image image'
+          'imgCaption imgCaption imgCaption imgCaption imgCaption imgCaption'
+          'one one one one one one'
+          'two two two two two two'
+          'three three three three three three'
+          'four four four four four four'
+          'footer footer footer footer footer footer';
+        
+      }
+    
+    
+    
+    #emMap{
+        text-align: center;
+        background: rgb(229, 231, 245);
+        padding:10px;
+    }
+    
+    #emMap img{
+      width:100%;
+      height: auto;
+    }
+    
+    #emMapCaption{
+        background: rgb(229, 231, 245);
+        text-align: center;
+    }
+    
+    #emMapCaption p{
+        font-family: 'Times New Roman', Times, serif;
+        font-style: normal;
+        font-variant: normal;
+        font-weight: bold;
+        font-size: 18px;;
+        color: black;
+    }
+    
+    .venue{
+        padding:20px;
+        background: #eaeade;
+        border:2px solid lightgray;
+        margin:2px;
+        border-style: dotted;
+    
+    }
+    
+    .venue .venueTitle{
+        background:lightgray;
+    }
+    
+    .venue .venueTitle h2{
+        font-family: 'Times New Roman', Times, serif;
+        font-style: normal;
+        font-variant: normal;
+        font-weight: bold;
+        font-size: 20px;;
+        color: black;
+    }
+    
+    .venue .venueDescription{
+    
+    }
+    
+    .venue .venueDescription p{
+      
+    }
+    
+    .venue .venueImage{
+    
+    }
+    
+    .venue .venueImage img{
+       
+    }
+    
+    .venue .venueOpeningTimes{
+    
+    }
+    
+    .venue .venueOpeningTimes p{
+        font-weight: bold;
+    }
+    
+    .venue .venueOpeningTimes table{
+    
+    }
+    
+    .venue .venueOpeningTimes table th{
+        font-family: 'Times New Roman', Times, serif;
+        font-style: normal;
+        font-variant: normal;
+        font-weight: bold;
+        font-size: 15px;;
+        color:rgb(0, 0, 0);
+        float: left;
+    }
+    
+    .venue .venueOpeningTimes table td{
+        font-family: 'Times New Roman', Times, serif;
+        font-style: normal;
+        font-variant: normal;
+        font-weight: normal;
+        font-size: 15px;;
+        color:hsl(0, 0%, 0%);
+    }
+    
+    .venue .venueContact{
+    
+    }
+    
+    .venue .venueContact p{
+        font-family: 'Times New Roman', Times, serif;
+        font-style: normal;
+        font-variant: normal;
+        font-weight: lighter;
+        font-size: 18px;;
+        color:rgb(0, 0, 0);
+    }
+    
+    .venue .venueAddress{
+    
+    }
+    
+    .venue .venueAddress address{
+        font-family: 'Times New Roman', Times, serif;
+        font-style: italic;
+        font-variant: normal;
+        font-weight: normal;
+        font-size: 15px;
+        color:rgb(0, 0, 0);
+    }
+}
+/*Desktop-------------------------------------*/
+@media only screen and (min-width: 1011px){
+    .grid-container-Eventsmap {
+        display: grid;
+        grid-template-columns: auto auto auto auto;
+        grid-template-areas:
+          'header header header header header header'
+          'nav nav nav nav nav nav'
+          'image image image image image image'
+          'imgCaption imgCaption imgCaption imgCaption imgCaption imgCaption'
+          'one one one two two two'
+          'three three three four four four'
+          'footer footer footer footer footer footer';
+        
+      }
+    
+    
+    
+    #emMap{
+        text-align: center;
+        background: rgb(229, 231, 245);
+        padding:50px;
+        width:100%;
+    }
+    
+    #emMap img{
+        width: 100%;
+        height: auto;
+    }
+    
+    #emMapCaption{
+        background: rgb(229, 231, 245);
+        text-align: center;
+    }
+    
+    #emMapCaption p{
+        font-family: 'Times New Roman', Times, serif;
+        font-style: normal;
+        font-variant: normal;
+        font-weight: bold;
+        font-size: 18px;;
+        color: black;
+    }
+    
+    .venue{
+        padding:20px;
+        background: #eaeade;
+        border:2px solid lightgray;
+        margin:2px;
+        border-style: dotted;
+    
+    }
+    
+    .venue .venueTitle{
+        background: lightgray;
+    }
+    
+    .venue .venueTitle h2{
+        font-family: 'Times New Roman', Times, serif;
+        font-style: normal;
+        font-variant: normal;
+        font-weight: bold;
+        font-size: 20px;
+        color: black;
+    }
+    
+    .venue .venueDescription{
+    
+    }
+    
+    .venue .venueDescription p{
+        font-size: 15px;
+        text-align: justify;
+      
+    }
+    
+    .venue .venueImage{
+        
+    
+    }
+    
+    .venue .venueImage img{
+       
+    }
+    
+    .venue .venueOpeningTimes{
+    
+    }
+    
+    .venue .venueOpeningTimes p{
+        font-weight: bold;
+    }
+    
+    .venue .venueOpeningTimes table{
+    
+    }
+    
+    .venue .venueOpeningTimes table th{
+        font-family: 'Times New Roman', Times, serif;
+        font-style: normal;
+        font-variant: normal;
+        font-weight: bold;
+        font-size: 15px;;
+        color:rgb(0, 0, 0);
+        float: left;
+    }
+    
+    .venue .venueOpeningTimes table td{
+        font-family: 'Times New Roman', Times, serif;
+        font-style: normal;
+        font-variant: normal;
+        font-weight: normal;
+        font-size: 15px;;
+        color:hsl(0, 0%, 0%);
+    }
+    
+    .venue .venueContact{
+    
+    }
+    
+    .venue .venueContact p{
+        font-family: 'Times New Roman', Times, serif;
+        font-style: normal;
+        font-variant: normal;
+        font-weight: lighter;
+        font-size: 18px;;
+        color:rgb(0, 0, 0);
+    }
+    
+    .venue .venueAddress{
+    
+    }
+    
+    .venue .venueAddress address{
+        font-family: 'Times New Roman', Times, serif;
+        font-style: italic;
+        font-variant: normal;
+        font-weight: normal;
+        font-size: 15px;
+        color:rgb(0, 0, 0);
+    }
+}
+
+
+
+
+/*Attractionsmap.html CSS----------------------------------*/
+
+#amMap { grid-area: image; }
+#amMapCaption{grid-area: imgCaption;}
+.firstAttraction{grid-area: one;}
+.secondAttraction{grid-area: two;}
+.thirdAttraction{grid-area: three;}
+.fourthAttraction{grid-area: four;}
+
+/*Mobile-------------------------------------*/
+@media only screen and (max-width: 570px){
+
+    .grid-container-Attractionsmap {
+        display: grid;
+        grid-template-columns: auto auto auto auto;
+        grid-template-areas:
+          'header header header header header header'
+          'nav nav nav nav nav nav'
+          'image image image image image image'
+          'imgCaption imgCaption imgCaption imgCaption imgCaption imgCaption'
+          'one one one one one one'
+          'two two two two two two'
+          'three three three three three three'
+          'four four four four four four'
+          'footer footer footer footer footer footer';
+        
+      }
+    
+    #amMap{
+        text-align: center;
+        background: rgb(229, 231, 245);
+        padding:10px;
+    }
+    
+    #amMap img{
+      width:100%;
+      height:auto;
+    }
+    
+    #amMapCaption{
+        background: rgb(229, 231, 245);
+        text-align: center;
+    }
+    
+    #amMapCaption p{
+        font-family: 'Times New Roman', Times, serif;
+        font-style: normal;
+        font-variant: normal;
+        font-weight: bold;
+        font-size: 14px;;
+        color: black;
+    }
+    
+    .attraction{
+       padding:20px;
+       background: #eaeade;
+       border:2px solid lightgray;
+       margin:2px;
+       border-style: dotted;
+    
+    }
+    
+    .attraction .attractionTitle {
+        background: lightgray;
+    }
+    
+    .attraction .attractionTitle h2{
+        font-family: 'Times New Roman', Times, serif;
+        font-style: normal;
+        font-variant: normal;
+        font-weight: bold;
+        font-size: 20px;;
+        color: black;
+    }
+    
+    .attraction .attractionDescription{
+    
+    }
+    
+    .attraction .attractionDescription p{
+     
+    }
+    
+    .attraction .attractionTimes{
+    
+    }
+    
+    .attraction .attractionTimes p{
+        font-weight: bold;
+      
+       
+    }
+    
+    .attraction .attractionTimes table{
+    
+    }
+    
+    .attraction .attractionTimes table th{
+        font-family: 'Times New Roman', Times, serif;
+        font-style: normal;
+        font-variant: normal;
+        font-weight: bold;
+        font-size: 15px;;
+        color:rgb(0, 0, 0);
+        float:left;
+    }
+    
+    .attraction .attractionTimes table td{
+        font-family: 'Times New Roman', Times, serif;
+        font-style: normal;
+        font-variant: normal;
+        font-weight: normal;
+        font-size: 15px;;
+        color:rgb(0, 0, 0);
+     
+    }
+    
+    
+    .attraction .attractionContact{
+    
+    }
+    
+    .attraction .attractionContact p{
+        font-family: 'Times New Roman', Times, serif;
+        font-style: normal;
+        font-variant: normal;
+        font-weight: lighter;
+        font-size: 18px;;
+        color:rgb(0, 0, 0);
+        position: relative;
+        top:20px;
+    }
+    
+    
+    .attraction .attractionAddress{
+    
+    }
+    
+    .attraction .attractionAddress p{
+        font-family: 'Times New Roman', Times, serif;
+        font-style: italic;
+        font-variant: normal;
+        font-weight: normal;
+        font-size: 15px;;
+        color:rgb(0, 0, 0);
+        position: relative;
+        top:20px;
+    }
+}
+/*Tablet-------------------------------------*/
+@media only screen and (min-width: 571px) and (max-width: 1010px){
+
+
+    .grid-container-Attractionsmap {
+        display: grid;
+        grid-template-columns: auto auto auto auto;
+        grid-template-areas:
+          'header header header header header header'
+          'nav nav nav nav nav nav'
+          'image image image image image image'
+          'imgCaption imgCaption imgCaption imgCaption imgCaption imgCaption'
+          'one one one one one one'
+          'two two two two two two'
+          'three three three three three three'
+          'four four four four four four'
+          'footer footer footer footer footer footer';
+        
+      }
+    
+    #amMap{
+        text-align: center;
+        background: rgb(229, 231, 245);
+        padding:10px;
+    }
+    
+    #amMap img{
+      width:100%;
+      height:auto;
+    }
+    
+    #amMapCaption{
+        background: rgb(229, 231, 245);
+        text-align: center;
+    }
+    
+    #amMapCaption p{
+        font-family: 'Times New Roman', Times, serif;
+        font-style: normal;
+        font-variant: normal;
+        font-weight: bold;
+        font-size: 18px;;
+        color: black;
+    }
+    
+    .attraction{
+       padding:20px;
+       background: #eaeade;
+       border:2px solid lightgray;
+       margin:2px;
+       border-style: dotted;
+    
+    }
+    
+    .attraction .attractionTitle {
+        background: lightgray;
+    }
+    
+    .attraction .attractionTitle h2{
+        font-family: 'Times New Roman', Times, serif;
+        font-style: normal;
+        font-variant: normal;
+        font-weight: bold;
+        font-size: 20px;;
+        color: black;
+    }
+    
+    .attraction .attractionDescription{
+    
+    }
+    
+    .attraction .attractionDescription p{
+     
+    }
+    
+    .attraction .attractionTimes{
+    
+    }
+    
+    .attraction .attractionTimes p{
+        font-weight: bold;
+      
+       
+    }
+    
+    .attraction .attractionTimes table{
+    
+    }
+    
+    .attraction .attractionTimes table th{
+        font-family: 'Times New Roman', Times, serif;
+        font-style: normal;
+        font-variant: normal;
+        font-weight: bold;
+        font-size: 15px;;
+        color:rgb(0, 0, 0);
+        float:left;
+    }
+    
+    .attraction .attractionTimes table td{
+        font-family: 'Times New Roman', Times, serif;
+        font-style: normal;
+        font-variant: normal;
+        font-weight: normal;
+        font-size: 15px;;
+        color:rgb(0, 0, 0);
+     
+    }
+    
+    
+    .attraction .attractionContact{
+    
+    }
+    
+    .attraction .attractionContact p{
+        font-family: 'Times New Roman', Times, serif;
+        font-style: normal;
+        font-variant: normal;
+        font-weight: lighter;
+        font-size: 18px;;
+        color:rgb(0, 0, 0);
+        position: relative;
+        top:20px;
+    }
+    
+    
+    .attraction .attractionAddress{
+    
+    }
+    
+    .attraction .attractionAddress p{
+        font-family: 'Times New Roman', Times, serif;
+        font-style: italic;
+        font-variant: normal;
+        font-weight: normal;
+        font-size: 15px;;
+        color:rgb(0, 0, 0);
+        position: relative;
+        top:20px;
+    }
+    
+}
+/*Desktop-------------------------------------*/
+@media only screen and (min-width: 1011px){
+    .grid-container-Attractionsmap {
+        display: grid;
+        grid-template-columns: auto auto auto auto;
+        grid-template-areas:
+          'header header header header header header'
+          'nav nav nav nav nav nav'
+          'image image image image image image'
+          'imgCaption imgCaption imgCaption imgCaption imgCaption imgCaption'
+          'one one one two two two'
+          'three three three four four four'
+          'footer footer footer footer footer footer';
+        
+      }
+    
+    #amMap{
+        text-align: center;
+        background: rgb(229, 231, 245);
+        padding:50px;
+        width:100%;
+    }
+    
+    #amMap img{
+      width:100%;
+      height:auto;
+    }
+    
+    #amMapCaption{
+        background: rgb(229, 231, 245);
+        text-align: center;
+    }
+    
+    #amMapCaption p{
+        font-family: 'Times New Roman', Times, serif;
+        font-style: normal;
+        font-variant: normal;
+        font-weight: bold;
+        font-size: 18px;;
+        color: black;
+    }
+    
+    .attraction{
+       padding:20px;
+       background: #eaeade;
+       border:2px solid lightgray;
+       margin:2px;
+       border-style: dotted;
+    
+    }
+    
+    .attraction .attractionTitle {
+        background: lightgray;
+    }
+    
+    .attraction .attractionTitle h2{
+        font-family: 'Times New Roman', Times, serif;
+        font-style: normal;
+        font-variant: normal;
+        font-weight: bold;
+        font-size: 20px;;
+        color: black;
+    }
+    
+    .attraction .attractionDescription{
+    
+    }
+    
+    .attraction .attractionDescription p{
+     
+    }
+    
+    .attraction .attractionTimes{
+    
+    }
+    
+    .attraction .attractionTimes p{
+        font-weight: bold;
+      
+       
+    }
+    
+    .attraction .attractionTimes table{
+    
+    }
+    
+    .attraction .attractionTimes table th{
+        font-family: 'Times New Roman', Times, serif;
+        font-style: normal;
+        font-variant: normal;
+        font-weight: bold;
+        font-size: 15px;;
+        color:rgb(0, 0, 0);
+        float:left;
+    }
+    
+    .attraction .attractionTimes table td{
+        font-family: 'Times New Roman', Times, serif;
+        font-style: normal;
+        font-variant: normal;
+        font-weight: normal;
+        font-size: 15px;;
+        color:rgb(0, 0, 0);
+     
+    }
+    
+    
+    .attraction .attractionContact{
+    
+    }
+    
+    .attraction .attractionContact p{
+        font-family: 'Times New Roman', Times, serif;
+        font-style: normal;
+        font-variant: normal;
+        font-weight: lighter;
+        font-size: 18px;;
+        color:rgb(0, 0, 0);
+        position: relative;
+        top:20px;
+    }
+    
+    
+    .attraction .attractionAddress{
+    
+    }
+    
+    .attraction .attractionAddress p{
+        font-family: 'Times New Roman', Times, serif;
+        font-style: italic;
+        font-variant: normal;
+        font-weight: normal;
+        font-size: 15px;;
+        color:rgb(0, 0, 0);
+        position: relative;
+        top:20px;
+    }
+}
+
+
+
+
+
+
+/*Media.html CSS---------------------------------------*/
+
+#MediaTitle { grid-area: title; }
+#fplinkArea { grid-area: main; }
+#MediadCurrent { grid-area: currentvideo; }
+#MediaDiscussions { grid-area: pastDiscussion; }
+
+
+/*Mobile-------------------------------------*/
+@media only screen and (max-width: 570px){
+
+    .grid-container-media {
+        display: grid;
+        grid-template-columns: auto auto auto auto auto auto;
+        grid-template-areas:
+          'header header header header header header'
+          'nav nav nav nav nav nav'
+          'title title title title title title'
+          'currentvideo currentvideo currentvideo currentvideo currentvideo currentvideo'
+          'pastDiscussion pastDiscussion pastDiscussion pastDiscussion pastDiscussion pastDiscussion'
+          'footer footer footer footer footer footer';
+        background-color: white;
+      }
+      
+      #MediaTitle{
+          text-align: center;
+          background: rgb(219, 216, 193);
+          padding:10px;
+      
+      }
+      
+      #MediaTitle h2{
+        font-size: 19px;
+        
+      }
+      
+      #MediaTitle p{
+       padding: 10px;
+       text-align: center;
+      }
+      
+      #MediadCurrent
+      {
+        padding:20px;
+        border: 1px solid grey;
+        border-bottom:none;
+        background: rgb(243, 243, 226);
+      }
+      
+      #MediadCurrent #MediaDcTitle{
+          
+      }
+      
+      #MediadCurrent #MediaDcTitle h3
+      {
+         font-size:16px;
+      }
+      
+      #MediadCurrent #MediaDcSeal{
+      
+      }
+      
+      #MediadCurrent #MediaDcSeal p
+      {
+          font-family: 'Times New Roman', Times, serif;
+          font-style: normal;
+          font-variant: normal;
+          font-weight: normal;
+          font-size: 15px;;
+          color:rgb(0, 0, 0);
+      }
+      
+      #MediadCurrent .MediaDcComment 
+      {
+          border: 1px solid grey;
+          margin-bottom: 10px;
+          padding: 10px;
+      }
+      
+      #MediadCurrent .MediaDcComment .MediaDcContent{
+         
+      }
+      
+      #MediadCurrent .MediaDcComment .MediaDcContent .{
+        
+      } 
+      
+      #MediadCurrent .MediaDcComment .MediaDcContent . img{
+         
+      } 
+      
+      
+      #MediadCurrent .MediaDcComment  .MediaDcContent .ContName{
+          
+      }
+      
+      #MediadCurrent .MediaDcComment  .MediaDcContent .ContName p{
+          font-family: 'Times New Roman', Times, serif;
+          font-style: normal;
+          font-variant: normal;
+          font-weight: normal;
+          font-size: 18px;;
+          color:rgb(0, 0, 0);
+      }
+      
+      #MediadCurrent .MediaDcComment .MediaDcText{
+         
+      }
+      
+      #MediadCurrent .MediaDcComment .MediaDcText q{
+         
+      }
+      
+      #MediadCurrent .MediaDcComment .{
+      
+      }
+      
+      #MediadCurrent .MediaDcComment . time
+      {
+          font-family: 'Times New Roman', Times, serif;
+          font-style: italic;
+          font-variant: normal;
+          font-weight: normal;
+          font-size: 15px;;
+          color:black;
+      }
+      
+      #MediaDiscussions{
+          padding: 10px;
+          border: 1px solid grey;
+          background: rgb(229, 231, 245);
+          border-bottom:none;
+      
+      }
+      
+      #MediaDiscussions p{
+          font-family: 'Times New Roman', Times, serif;
+          font-style: normal;
+          font-variant: normal;
+          font-weight: bold;
+          font-size: 20px;;
+          color:black;
+      }
+      
+      #MediaDiscussions .MediaDiscussion{
+      
+      }
+      
+      #MediaDiscussions .MediaDiscussion h3{
+          font-weight: normal;
+      }
+      
+
+      
+
+
+}
+/*Tablet-------------------------------------*/
+@media only screen and (min-width: 571px) and (max-width: 1010px){
+
+    .grid-container-media {
+        display: grid;
+        grid-template-columns: auto auto auto auto;
+        grid-template-areas:
+        'header header header header header header'
+        'nav nav nav nav nav nav'
+        'title title title title title title'
+        'currentvideo currentvideo currentvideo currentvideo currentvideo currentvideo'
+        'pastDiscussion pastDiscussion pastDiscussion pastDiscussion pastDiscussion pastDiscussion'
+        'footer footer footer footer footer footer';
+        background-color: white;
+      }
+      
+      #MediaTitle{
+          text-align: center;
+          background: rgb(219, 216, 193);
+          padding:10px;
+      
+      }
+      
+      #MediaTitle h2{
+        font-size: 22px;
+        
+      }
+      
+      #MediaTitle p{
+        padding: 10px;
+        text-align: center;
+      }
+      
+      #MediadCurrent
+      {
+        padding:20px;
+        border: 1px solid grey;
+        background: rgb(243, 243, 226);
+      }
+      
+      #MediadCurrent #MediaDcTitle{
+          
+      }
+      
+      #MediadCurrent #MediaDcTitle h3
+      {
+         
+      }
+      
+      #MediadCurrent #MediaDcSeal{
+      
+      }
+      
+      #MediadCurrent #MediaDcSeal p
+      {
+          font-family: 'Times New Roman', Times, serif;
+          font-style: normal;
+          font-variant: normal;
+          font-weight: normal;
+          font-size: 15px;;
+          color:rgb(0, 0, 0);
+      }
+      
+      #MediadCurrent .MediaDcComment 
+      {
+          border: 1px solid grey;
+          margin-bottom: 10px;
+          padding: 10px;
+      }
+      
+      #MediadCurrent .MediaDcComment .MediaDcContent{
+         
+      }
+      
+      #MediadCurrent .MediaDcComment .MediaDcContent .{
+        
+      } 
+      
+      #MediadCurrent .MediaDcComment .MediaDcContent . img{
+         
+      } 
+      
+      
+      #MediadCurrent .MediaDcComment  .MediaDcContent .ContName{
+          
+      }
+      
+      #MediadCurrent .MediaDcComment  .MediaDcContent .ContName p{
+          font-family: 'Times New Roman', Times, serif;
+          font-style: normal;
+          font-variant: normal;
+          font-weight: normal;
+          font-size: 18px;;
+          color:rgb(0, 0, 0);
+      }
+      
+      #MediadCurrent .MediaDcComment .MediaDcText{
+         
+      }
+      
+      #MediadCurrent .MediaDcComment .MediaDcText q{
+         
+      }
+      
+      #MediadCurrent .MediaDcComment .{
+      
+      }
+      
+      #MediadCurrent .MediaDcComment . time
+      {
+          font-family: 'Times New Roman', Times, serif;
+          font-style: italic;
+          font-variant: normal;
+          font-weight: normal;
+          font-size: 15px;;
+          color:black;
+      }
+      
+      #MediaDiscussions{
+          padding: 10px;
+          border: 1px solid grey;
+          background: rgb(229, 231, 245);
+          border-top:none;
+      
+      }
+      
+      #MediaDiscussions p{
+          font-family: 'Times New Roman', Times, serif;
+          font-style: normal;
+          font-variant: normal;
+          font-weight: bold;
+          font-size: 20px;;
+          color:black;
+      }
+      
+      #MediaDiscussions .MediaDiscussion{
+      
+      }
+      
+      #MediaDiscussions .MediaDiscussion h3{
+          font-weight: normal;
+      }
+      
+
+}
+/*Desktop-------------------------------------*/
+@media only screen and (min-width: 1011px){
+
+    .grid-container-media {
+        display: grid;
+        grid-template-columns: auto auto auto auto;
+        grid-template-areas:
+        'header header header header header header'
+        'nav nav nav nav nav nav'
+        'title title title title title title'
+        'currentvideo currentvideo currentvideo currentvideo pastDiscussion pastDiscussion'
+        'footer footer footer footer footer footer';
+        background-color: white;
+      }
+      
+      #MediaTitle{
+          text-align: center;
+          background: rgb(219, 216, 193);
+      
+      }
+      
+      #MediaTitle h2{
+        font-size: 22px;
+        
+      }
+      
+      #MediaTitle p{
+       
+      }
+      
+      #MediadCurrent
+      {
+        padding:20px;
+        border: 1px solid grey;
+        border-right: none;
+        background: rgb(243, 243, 226);
+      }
+      
+      #MediadCurrent #MediaDcTitle{
+          
+      }
+      
+      #MediadCurrent #MediaDcTitle h3
+      {
+         
+      }
+      
+      #MediadCurrent #MediaDcSeal{
+      
+      }
+      
+      #MediadCurrent #MediaDcSeal p
+      {
+          font-family: 'Times New Roman', Times, serif;
+          font-style: normal;
+          font-variant: normal;
+          font-weight: normal;
+          font-size: 15px;;
+          color:rgb(0, 0, 0);
+      }
+      
+      #MediadCurrent .MediaDcComment 
+      {
+          border: 1px solid grey;
+          margin-bottom: 10px;
+          padding: 10px;
+      }
+      
+      #MediadCurrent .MediaDcComment .MediaDcContent{
+         
+      }
+      
+      #MediadCurrent .MediaDcComment .MediaDcContent .{
+        
+      } 
+      
+      #MediadCurrent .MediaDcComment .MediaDcContent . img{
+         
+      } 
+      
+      
+      #MediadCurrent .MediaDcComment  .MediaDcContent .ContName{
+          
+      }
+      
+      #MediadCurrent .MediaDcComment  .MediaDcContent .ContName p{
+          font-family: 'Times New Roman', Times, serif;
+          font-style: normal;
+          font-variant: normal;
+          font-weight: normal;
+          font-size: 18px;;
+          color:rgb(0, 0, 0);
+      }
+      
+      #MediadCurrent .MediaDcComment .MediaDcText{
+         
+      }
+      
+      #MediadCurrent .MediaDcComment .MediaDcText q{
+         
+      }
+      
+      #MediadCurrent .MediaDcComment .{
+      
+      }
+      
+      #MediadCurrent .MediaDcComment . time
+      {
+          font-family: 'Times New Roman', Times, serif;
+          font-style: italic;
+          font-variant: normal;
+          font-weight: normal;
+          font-size: 15px;;
+          color:black;
+      }
+      
+      #MediaDiscussions{
+          padding: 10px;
+          border: 1px solid grey;
+          background: rgb(229, 231, 245);
+      
+      }
+      
+      #MediaDiscussions p{
+          font-family: 'Times New Roman', Times, serif;
+          font-style: normal;
+          font-variant: normal;
+          font-weight: bold;
+          font-size: 20px;;
+          color:black;
+      }
+      
+      #MediaDiscussions .MediaDiscussion{
+      
+      }
+      
+      #MediaDiscussions .MediaDiscussion h3{
+          font-weight: normal;
+      }
+      
+
+}
+
+/* Picture Slideshow-------------------------------------*/
+
+* {
+  box-sizing: border-box;
+}
+
+/* Position the image container (needed to position the left and right arrows) */
+.container {
+  position: relative;
+}
+
+/* Hide the images by default */
+.mySlides {
+  display: none;
+}
+
+/* Add a pointer when hovering over the thumbnail images */
+.cursor {
+  cursor: pointer;
+}
+
+/* Next & previous buttons */
+.prev,
+.next {
+  cursor: pointer;
+  position: absolute;
+  top: 40%;
+  width: auto;
+  padding: 16px;
+  margin-top: -50px;
+  color: white;
+  font-weight: bold;
+  font-size: 20px;
+  border-radius: 0 3px 3px 0;
+  user-select: none;
+  -webkit-user-select: none;
+}
+
+/* Position the "next button" to the right */
+.next {
+  right: 0;
+  border-radius: 3px 0 0 3px;
+}
+
+/* On hover, add a black background color with a little bit see-through */
+.prev:hover,
+.next:hover {
+  background-color: rgba(0, 0, 0, 0.8);
+}
+
+/* Number text (1/3 etc) */
+.numbertext {
+  color: #f2f2f2;
+  font-size: 12px;
+  padding: 8px 12px;
+  position: absolute;
+  top: 0;
+}
+
+/* Container for image text */
+.caption-container {
+  text-align: center;
+  background-color: gray;
+  padding: 2px 16px;
+  color: white;
+}
+
+.row:after {
+  content: "";
+  display: table;
+  clear: both;
+}
+
+/* Six columns side by side */
+.column {
+  float: left;
+  width: 16.66%;
+}
+
+/* Add a transparency effect for thumnbail images */
+.demo {
+  opacity: 0.5;
+}
+
+.active,
+.demo:hover {
+  opacity: 1;
+}
+
+
+/*Footer CSS-------------------------------------------*/
+
+footer { grid-area: footer; }
+/*Mobile-------------------------------------*/
+@media only screen and (max-width: 570px){
+    footer
+{
+    background:#4e5166;
+    text-align: center;
+    width:100%;
+    padding: 10px;
+}
+
+footer #fpcontactInformation
+{
+    background: rgb(204,194,184);
+    text-align: center;
+    margin: auto;
+    width:99%;
+    padding:10px;
+    
+}
+
+footer #fpcontactInformation ul
+{
+    list-style:none;
+    margin: 0;
+    padding: 0;
+    text-align: center;
+}
+
+footer #fpcontactInformation ul li
+{
+    padding: 8px; 
+}
+
+
+footer #fpcontactInformation #contact
+{
+    font-family: 'Times New Roman', Times, serif;
+    font-style: normal;
+    font-variant: normal;
+    font-weight: bold;
+    font-size: 20px;;
+    color: red;
+}
+
+footer #fpcontactInformation #name
+{
+  
+}
+
+footer #fpcontactInformation #email
+{
+    font-family: 'Times New Roman', Times, serif;
+    font-style: normal;
+    font-variant: normal;
+    font-weight: normal;
+    font-size: 15px;;
+    color: blue;
+}
+
+footer #fpcontactInformation #charity
+{
+    font-family: 'Times New Roman', Times, serif;
+    font-style: normal;
+    font-variant: normal;
+    font-weight: normal;
+    font-size: 15px;;
+    color: black;
+}
+
+
+
+footer #fpcontactInformation ul li a
+{
+    
+}
+}
+/*Tablet-------------------------------------*/
+@media only screen and (min-width: 571px) and (max-width: 1010px){
+    footer
+    {
+        background:#4e5166;
+        text-align: center;
+        width:100%;
+        padding: 10px;
+    }
+    
+    footer #fpcontactInformation
+    {
+        background: rgb(204,194,184);
+        text-align: center;
+        margin: auto;
+        width:99%;
+        padding:10px;
+        
+    }
+    
+    footer #fpcontactInformation ul
+    {
+        list-style:none;
+        margin: 0;
+        padding: 0;
+        text-align: center;
+    }
+    
+    footer #fpcontactInformation ul li
+    {
+        padding: 8px; 
+    }
+    
+    
+    footer #fpcontactInformation #contact
+    {
+        font-family: 'Times New Roman', Times, serif;
+        font-style: normal;
+        font-variant: normal;
+        font-weight: bold;
+        font-size: 20px;;
+        color: red;
+    }
+    
+    footer #fpcontactInformation #name
+    {
+      
+    }
+    
+    footer #fpcontactInformation #email
+    {
+        font-family: 'Times New Roman', Times, serif;
+        font-style: normal;
+        font-variant: normal;
+        font-weight: normal;
+        font-size: 15px;;
+        color: blue;
+    }
+    
+    footer #fpcontactInformation #charity
+    {
+        font-family: 'Times New Roman', Times, serif;
+        font-style: normal;
+        font-variant: normal;
+        font-weight: normal;
+        font-size: 15px;;
+        color: black;
+    }
+    
+    
+    
+    footer #fpcontactInformation ul li a
+    {
+        
+    }
+}
+/*Desktop-------------------------------------*/
+@media only screen and (min-width: 1011px){
+    footer
+{
+    background:#4e5166;
+    text-align: center;
+    width:100%;
+    padding: 10px;
+}
+
+footer #fpcontactInformation
+{
+    background:rgb(204,194,184);
+    text-align: center;
+    margin: auto;
+    width:99%;
+    padding:10px;
+    
+}
+
+footer #fpcontactInformation ul
+{
+    list-style:none;
+    margin: 0;
+    padding: 0;
+    text-align: center;
+}
+
+footer #fpcontactInformation ul li
+{
+    display: inline-block;
+    margin:20px;
+    height: 5px;
+    position: relative;
+    padding-bottom: 10px;
+    
+}
+
+
+footer #fpcontactInformation #contact
+{
+    font-family: 'Times New Roman', Times, serif;
+    font-style: normal;
+    font-variant: normal;
+    font-weight: bold;
+    font-size: 20px;;
+    color: red;
+}
+
+footer #fpcontactInformation #name
+{
+  
+}
+
+footer #fpcontactInformation #email
+{
+    font-family: 'Times New Roman', Times, serif;
+    font-style: normal;
+    font-variant: normal;
+    font-weight: normal;
+    font-size: 15px;;
+    color: blue;
+}
+
+footer #fpcontactInformation #charity
+{
+    font-family: 'Times New Roman', Times, serif;
+    font-style: normal;
+    font-variant: normal;
+    font-weight: normal;
+    font-size: 15px;;
+    color: black;
+}
+
+
+
+footer #fpcontactInformation ul li a
+{
+    
+}
+}
+
+
+
+
